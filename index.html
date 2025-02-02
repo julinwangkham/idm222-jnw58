@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>home</title>
+ <link rel="normalize" href="css/normalize.css"/>
+ <link rel="stylesheet" href="css/screen.css"/>
+ <script src="https://kit.fontawesome.com/f28019255b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img alt="logo" width="65" src="graphics/Logo_WEB2.png">
+            </a>
+        </div>
+        <div class="navbar">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            <ul class="pages">
+              <li><a href="index.html">portfolio</a></li>
+              <li><a href="resume.html">resume</a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div>
+            <img class="bannerimg"
+                src="graphics/Character/WEB2_kitties.png"
+                alt="banner">
+        </div>
+    </div>
+    <!-- Clicking on each 'see all' button will bring the user to either the 2D or 3D pages. -->
+    <div class="work-preview">
+        <div class="work-container">
+            <h2 class="work1header"> 3D Work </h2>
+            <img class="previewimg" 
+                src="graphics/CLOVER_simple.jpg"
+                alt="preview1">
+            <div class="button">
+                <a href="3D.html">
+                    <button class="btn">see all</button>
+                </a>
+            </div>
+        </div>
+        <div class="work-container">
+            <h2> 2D Work </h2>
+            <img class="previewimg"
+                width="400"
+                src="graphics/Character/seon2024icon.png"
+                alt="preview2">
+            <div class="button">
+                <a href="2D.html">
+                    <button class="btn">see all</button>
+                </a>
+            </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <section>
+                <p> &copy; Julin Wangkham 2024 </p>
+                <a href="https://www.linkedin.com/in/julinwangkham/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto: jnw58@drexel.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </section>
+        </footer>
+    </body>
+    </html>
