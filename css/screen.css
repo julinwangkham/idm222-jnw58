@@ -62,6 +62,7 @@ p {
     font-size: 14px;
     padding: 12px 24px;
     text-align: center;
+    text-decoration: none;
 }
 .button {
     align-items: center;
@@ -69,8 +70,10 @@ p {
     height: 50px;
     justify-content: center;
     padding-bottom: 45px;
-    padding-top: 25px;
+    padding-top: 30px;
 }
+
+
 
 /* Navigation Bar */
 nav{
@@ -94,13 +97,51 @@ nav{
 .pages li{
     list-style: none;
 }
+.navlink{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+/* Resume */
+
+.resume-info ul{
+    margin: 5px 30px 30px 20px;
+}
+
+.resume-info ul li{
+    list-style: inside;
+    margin: 0px 30px 5px 30px;
+}
+
+.resume-container{
+    margin: 50px;
+}
+
+
+.resume-info{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+/*2D Work*/
+
+.work img, video {
+    width: 100%;
+}
+
+.work {
+    max-width: 928px;
+    margin: auto;
+}
+
+/* section { 
+    margin: 3rem auto;
+    max-width: 75ch;
+    padding: 3rem;
+} */
 
 @media (max-width: 440px) {
     header {
-        padding: 1rem;
-        position: relative;
-
-    label {
         cursor: pointer;
         height: 1.25rem;
         position: fixed;
@@ -108,52 +149,44 @@ nav{
         top: 1rem;
         width: 1.625rem;
         z-index: 1001;
-
-span {
-          background-color: var(--red);
-          border-radius: 2px;
-          display: block;
-          height: 3px;
-          position: absolute;
-          transform-origin: left;
-          width: 100%;
-
-        &:nth-child(1) {
-            top: 0;
-        }
-        &:nth-child(2) {
-            top: 0.5rem;
-        }
-        &:nth-child(3) {
-            top: 1rem;
-        }
       }
-    }
-  }  
-  nav {
-      background: var(--beige);
-      height: 100vh;
-      position: fixed;
-      right: -300px;
-      top: 0;
-      width: 18.75rem;
-      z-index: 1000;
+      
+    span {
+        background-color: var(--red);
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        transform-origin: left;
+        width: 100%;
+      }
+      
+    span:nth-child(1) {
+        top: 0;
+      }
+      
+    span:nth-child(2) {
+        top: 0.5rem;
+      }
+      
+    span:nth-child(3) {
+        top: 1rem;
+      }
 
 ul {
-        list-style: none;
-        margin: 0;
-        padding: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 2rem;
+}
 
 li {
-          margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}
 
 a {
-            color: var(--red);
-            text-decoration: none;
-        }
-      }
-    }
-  }  
+  color: var(--red);
+  text-decoration: none;
+}
   /* Show nav when checkbox is checked */
   .nav-toggle:checked ~ nav {
       right: 0;
@@ -202,11 +235,46 @@ img.bannerimg{
 
 /* work */
 
-.work-preview{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 45px;
 }
-img.previewimg{
+.portfolio img{
     width: 100%;
 }
+.work2 img{
+    width: 56%;
+    display: block;
+    margin: auto;
+}
+
+.work1 img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.gallery, .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    margin: 30px
+}
+
+@media screen and (max-width: 480px) {
+
+        div.gallery {
+            grid-template-columns: 1fr;
+        }
+        img.regular {
+            grid-row: auto;
+            grid-column: auto;
+        }
+        img.wide {
+            grid-column: auto;
+        }
+    
+    }
