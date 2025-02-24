@@ -256,7 +256,7 @@ img.bannerimg{
     margin: auto;
 }
 
-.gallery, .about {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -264,6 +264,23 @@ img.bannerimg{
     margin: 30px
 }
 
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 75px;
+    align-items: center;
+    }
+
+}  
 @media screen and (max-width: 480px) {
 
         div.gallery {
