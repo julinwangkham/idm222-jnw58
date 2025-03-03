@@ -253,12 +253,36 @@ img.bannerimg{
     margin: auto;
 }
 
-.gallery {
+@media (max-width: 480px) {
+
+.portfolio{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    margin: auto;
+    padding: 2rem;
+
+}
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     justify-items: center;
-    margin: 30px
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
 .about {
@@ -268,7 +292,7 @@ img.bannerimg{
     align-items: center;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 
 .about {
     display: grid;
@@ -276,6 +300,14 @@ img.bannerimg{
     margin: 75px;
     align-items: center;
     }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    margin: 30px
+}
 
 }  
 @media screen and (max-width: 480px) {
