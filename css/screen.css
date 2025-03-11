@@ -314,9 +314,7 @@ img.bannerimg{
 }
 
 .resumebutton {
-    display: flex;
-    height: 50px;
-    justify-content: right;
+    text-align: right;
     padding-bottom: 50px;
     padding-top: 35px;
 }
