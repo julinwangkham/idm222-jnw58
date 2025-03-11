@@ -243,18 +243,40 @@ img.bannerimg{
     margin: auto;
 }
 
+.work h2 {
+    padding-bottom: 10px;
+}
+
+.work h3 {
+    padding-top: 10px;
+}
+
+.previous a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.previous a :hover {
+    color: var(--brown);
+    transition: all 0.3s ease-in-out;
+}
+
 .work-container img, video {
     width: 100%;
 }
 
 .work-container {
-    max-width: 928px;
+    max-width: 1020px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: auto;
     margin: auto;
-    max-width: 1020px;
     gap: 45px;
+}
+
+.work-container h2 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /* Resume */
@@ -269,13 +291,14 @@ img.bannerimg{
 }
 
 .resume-container{
-    margin: 40px;
+    margin: 20px;
     padding: 45px;
 }
 
 .resume-info{
     display: grid;
     grid-template-columns: 40% 60%;
+    gap: 30px;
 }
 
 .resume-info h2{
@@ -369,8 +392,39 @@ img.bannerimg{
 }
 
 @media (max-width: 768px) {
+    
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 80%;
+    padding: 25px;
+}
 
+.work-container {
+    max-width: 928px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
 
+.projectinfo {
+    padding: 10px 50px 30px 5px;
+}
+
+.previous, .work h2{
+    padding-left: 5px; 
+}
+
+.about-me {
+    margin: auto;
+    padding: 25px 0;
+}
+
+.resume-container{
+    margin: auto;
+    padding: 45px;
+}
 }
 
 @media (max-width: 480px) {
@@ -386,7 +440,7 @@ img.bannerimg{
 
 .resume-container{
     margin: auto;
-    padding: 20px;
+    padding: 20px 45px;
 }
 
 
@@ -395,6 +449,10 @@ img.bannerimg{
     grid-template-columns: 1fr;
 
 
+}
+
+.projectinfo {
+    padding: 10px 50px 30px 5px;
 }
 
 .gallery {
