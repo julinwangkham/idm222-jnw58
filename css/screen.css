@@ -234,7 +234,7 @@ img.bannerimg{
     font-size: 1.75rem;
 }
 
-.work img, video {
+.work img, picture, video {
     width: 100%;
 }
 

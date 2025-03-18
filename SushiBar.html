@@ -36,18 +36,22 @@
         <div class="sushi-bar">
           <h2>Sushi Bar</h2>
           <div>
-              <img class="sushi"
-              src="graphics/SushiBar/WEB2_HeroObjectRender.jpg"
-              alt="sushi1">
-              <img class="sushi"
-              src="graphics/SushiBar/WEB2_DecoObjectRender.jpg"
-              alt="sushi2">
-              <img class="sushi"
-              src="graphics/SushiBar/WEB2_Final_RenderDay3.jpg"
-              alt="sushi3">
-              <img class="sushi"
-              src="graphics/SushiBar/WEB2_Final_RenderNight3.jpg"
-              alt="sushi4">
+              <picture>
+              <source media="(max-width: 480px)" srcset="graphics/SushiBar/WEB2_Square_HeroObjectRender.jpg">
+              <img src="graphics/SushiBar/WEB2_HeroObjectRender.jpg" alt="sushi1">
+              </picture>
+              <picture>
+              <source media="(max-width: 480px)" srcset="graphics/SushiBar/WEB2_Square_DecoObjectRender.jpg">
+              <img src="graphics/SushiBar/WEB2_DecoObjectRender.jpg" alt="sushi2">
+              </picture>
+              <picture>
+              <source media="(max-width: 480px)" srcset="graphics/SushiBar/WEB2_Square_Final_RenderDay3.jpg">
+              <img src="graphics/SushiBar/WEB2_Final_RenderDay3.jpg" alt="sushi3">
+              </picture>
+              <picture>
+              <source media="(max-width: 480px)" srcset="graphics/SushiBar/WEB2_Square_Final_RenderNight3.jpg">
+              <img src="graphics/SushiBar/WEB2_Final_RenderNight3.jpg" alt="sushi4">
+              </picture>
           </div>
         </div>
         <div class="projectinfo">
@@ -66,11 +70,11 @@
       </div>
     </main>
       <footer class="footer">
-        <section>
+        <div>
             <p> &copy; Julin Wangkham 2024 </p>
             <a href="https://www.linkedin.com/in/julinwangkham/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="mailto:jnw58@drexel.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
